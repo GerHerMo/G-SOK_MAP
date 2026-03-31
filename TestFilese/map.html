@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ac8a7fc43d1c346f4cef95ca4f483b1b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ac8a7fc43d1c346f4cef95ca4f483b1b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ac8a7fc43d1c346f4cef95ca4f483b1b = L.map(
+                "map_ac8a7fc43d1c346f4cef95ca4f483b1b",
+                {
+                    center: [36.3504119, 127.3845475],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_36cacfc7add4aec5ac68439d93b6c7a4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_36cacfc7add4aec5ac68439d93b6c7a4.addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+            var tile_layer_2c6f2e528d9db0f289da8886848fbb0b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_305314ea8d8d410a406567a5352d779d = new L.Control.MiniMap(
+                tile_layer_2c6f2e528d9db0f289da8886848fbb0b,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_ac8a7fc43d1c346f4cef95ca4f483b1b.addControl(mini_map_305314ea8d8d410a406567a5352d779d);
+        
+    
+            var marker_9ce8a380068b41237b7903a7a178ae6c = L.marker(
+                [36.3298253585743, 127.443360298963],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_e2ba42f370d24dbbf5747e07da62eed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b25f8dd25192e7c36d1cdc5366ef3e1 = $(`<div id="html_1b25f8dd25192e7c36d1cdc5366ef3e1" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/10264095</div>`)[0];
+                popup_e2ba42f370d24dbbf5747e07da62eed7.setContent(html_1b25f8dd25192e7c36d1cdc5366ef3e1);
+            
+        
+
+        marker_9ce8a380068b41237b7903a7a178ae6c.bindPopup(popup_e2ba42f370d24dbbf5747e07da62eed7)
+        ;
+
+        
+    
+    
+            marker_9ce8a380068b41237b7903a7a178ae6c.bindTooltip(
+                `<div>
+                     대동역 대전1호선 7번출구
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fa6f38a3902b3d9d7190a84a4af0f51 = L.marker(
+                [36.35133835240412, 127.3009429877117],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_b5753ca73bc2aafabf9196e7dca2c816 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f47c33bfc31caf55aeba278e3c2afb70 = $(`<div id="html_f47c33bfc31caf55aeba278e3c2afb70" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/11213717</div>`)[0];
+                popup_b5753ca73bc2aafabf9196e7dca2c816.setContent(html_f47c33bfc31caf55aeba278e3c2afb70);
+            
+        
+
+        marker_5fa6f38a3902b3d9d7190a84a4af0f51.bindPopup(popup_b5753ca73bc2aafabf9196e7dca2c816)
+        ;
+
+        
+    
+    
+            marker_5fa6f38a3902b3d9d7190a84a4af0f51.bindTooltip(
+                `<div>
+                     국립한밭대학교 유성덕명캠퍼스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aebc00b9ed736f63ad5f37104efc69d = L.marker(
+                [36.35096502145428, 127.29852518394722],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_72b8e6c43d100e4a6973bc4e48055c15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf1bc8eb39ba3ba27e1ff302d2ae8eee = $(`<div id="html_bf1bc8eb39ba3ba27e1ff302d2ae8eee" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/8638145</div>`)[0];
+                popup_72b8e6c43d100e4a6973bc4e48055c15.setContent(html_bf1bc8eb39ba3ba27e1ff302d2ae8eee);
+            
+        
+
+        marker_2aebc00b9ed736f63ad5f37104efc69d.bindPopup(popup_72b8e6c43d100e4a6973bc4e48055c15)
+        ;
+
+        
+    
+    
+            marker_2aebc00b9ed736f63ad5f37104efc69d.bindTooltip(
+                `<div>
+                     국립한밭대학교 유성덕명캠퍼스 정문
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a981251f905174ce206656ccb5a32300 = L.marker(
+                [36.3520328614974, 127.299986453621],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_a7e9696bd72da27d387fb2e766850f42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac89afd5813e22f5731b22d709af3adc = $(`<div id="html_ac89afd5813e22f5731b22d709af3adc" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17566674</div>`)[0];
+                popup_a7e9696bd72da27d387fb2e766850f42.setContent(html_ac89afd5813e22f5731b22d709af3adc);
+            
+        
+
+        marker_a981251f905174ce206656ccb5a32300.bindPopup(popup_a7e9696bd72da27d387fb2e766850f42)
+        ;
+
+        
+    
+    
+            marker_a981251f905174ce206656ccb5a32300.bindTooltip(
+                `<div>
+                     한밭대학교 아트홀
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1355b672699086b77dd03f252ecbe5f = L.marker(
+                [36.3507031931723, 127.298359306008],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_76244c3d7db55cc71ab2aec8e51fb6cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_425a1a3371f0ea9a70c1dd5ee8ef3013 = $(`<div id="html_425a1a3371f0ea9a70c1dd5ee8ef3013" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/26486544</div>`)[0];
+                popup_76244c3d7db55cc71ab2aec8e51fb6cb.setContent(html_425a1a3371f0ea9a70c1dd5ee8ef3013);
+            
+        
+
+        marker_b1355b672699086b77dd03f252ecbe5f.bindPopup(popup_76244c3d7db55cc71ab2aec8e51fb6cb)
+        ;
+
+        
+    
+    
+            marker_b1355b672699086b77dd03f252ecbe5f.bindTooltip(
+                `<div>
+                     한밭대학교 우편취급국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b12892419eb59b0169973f61406bf085 = L.marker(
+                [36.3536914765031, 127.301240592964],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_70aaf884b5d7ac21cd449ffbf18c0bd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0428804b5d60144de284db930ed3753 = $(`<div id="html_d0428804b5d60144de284db930ed3753" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17561338</div>`)[0];
+                popup_70aaf884b5d7ac21cd449ffbf18c0bd3.setContent(html_d0428804b5d60144de284db930ed3753);
+            
+        
+
+        marker_b12892419eb59b0169973f61406bf085.bindPopup(popup_70aaf884b5d7ac21cd449ffbf18c0bd3)
+        ;
+
+        
+    
+    
+            marker_b12892419eb59b0169973f61406bf085.bindTooltip(
+                `<div>
+                     한밭대학교 종합운동장
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c68221adf923483339e656fb79df6cd = L.marker(
+                [36.3509576729844, 127.301809364702],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_9bc14fefc2059c1bd8664dfe31fbbb16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f894066d0d9bcaccc8d063654b9284ad = $(`<div id="html_f894066d0d9bcaccc8d063654b9284ad" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/8637316</div>`)[0];
+                popup_9bc14fefc2059c1bd8664dfe31fbbb16.setContent(html_f894066d0d9bcaccc8d063654b9284ad);
+            
+        
+
+        marker_6c68221adf923483339e656fb79df6cd.bindPopup(popup_9bc14fefc2059c1bd8664dfe31fbbb16)
+        ;
+
+        
+    
+    
+            marker_6c68221adf923483339e656fb79df6cd.bindTooltip(
+                `<div>
+                     한밭대학교 도서관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcf0799fdb50bb4c5ab5579246940462 = L.marker(
+                [36.34814857245917, 127.30114682919724],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_d5406f6807747e8a1f3b1f989563d5d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79e394bc93b1c662574ebb8981ea771d = $(`<div id="html_79e394bc93b1c662574ebb8981ea771d" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1955808481</div>`)[0];
+                popup_d5406f6807747e8a1f3b1f989563d5d2.setContent(html_79e394bc93b1c662574ebb8981ea771d);
+            
+        
+
+        marker_bcf0799fdb50bb4c5ab5579246940462.bindPopup(popup_d5406f6807747e8a1f3b1f989563d5d2)
+        ;
+
+        
+    
+    
+            marker_bcf0799fdb50bb4c5ab5579246940462.bindTooltip(
+                `<div>
+                     국립한밭대학교 유성덕명캠퍼스 체육관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b55452bd15a2bf553ec751b1ebaf2d16 = L.marker(
+                [36.3489107807442, 127.301578661083],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_cd7efaf30983e5b013091fea072d3353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0bfc77108149d8da9f34a514acf07fb = $(`<div id="html_b0bfc77108149d8da9f34a514acf07fb" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17558501</div>`)[0];
+                popup_cd7efaf30983e5b013091fea072d3353.setContent(html_b0bfc77108149d8da9f34a514acf07fb);
+            
+        
+
+        marker_b55452bd15a2bf553ec751b1ebaf2d16.bindPopup(popup_cd7efaf30983e5b013091fea072d3353)
+        ;
+
+        
+    
+    
+            marker_b55452bd15a2bf553ec751b1ebaf2d16.bindTooltip(
+                `<div>
+                     한밭대학교 건설공학관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bba3fba35082bbf78b327e05931593d = L.marker(
+                [36.351073539610184, 127.29801313611276],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_6dbd168dfcaffa74a3c697b5b6637214 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a09e279b42e92306d2a586136237483 = $(`<div id="html_5a09e279b42e92306d2a586136237483" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/8223323</div>`)[0];
+                popup_6dbd168dfcaffa74a3c697b5b6637214.setContent(html_5a09e279b42e92306d2a586136237483);
+            
+        
+
+        marker_9bba3fba35082bbf78b327e05931593d.bindPopup(popup_6dbd168dfcaffa74a3c697b5b6637214)
+        ;
+
+        
+    
+    
+            marker_9bba3fba35082bbf78b327e05931593d.bindTooltip(
+                `<div>
+                     KB국민은행 한밭대학교(점)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5516f03154ebd34c6ce039b8fd2a4b1 = L.marker(
+                [36.3506234229411, 127.299985502482],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_13820fa61c23ad0cd42779d620f1e389 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce1b046ff3f02a1962e40e53596a6fb1 = $(`<div id="html_ce1b046ff3f02a1962e40e53596a6fb1" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/16771229</div>`)[0];
+                popup_13820fa61c23ad0cd42779d620f1e389.setContent(html_ce1b046ff3f02a1962e40e53596a6fb1);
+            
+        
+
+        marker_f5516f03154ebd34c6ce039b8fd2a4b1.bindPopup(popup_13820fa61c23ad0cd42779d620f1e389)
+        ;
+
+        
+    
+    
+            marker_f5516f03154ebd34c6ce039b8fd2a4b1.bindTooltip(
+                `<div>
+                     한밭대학교 구내안경원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fe61d802728190172b4af10b3f3e1c5 = L.marker(
+                [36.35285762845807, 127.30062798211297],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_2decc905929f7db984153b43ca4690d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a22c4931a32866accf8e6352fa1f164c = $(`<div id="html_a22c4931a32866accf8e6352fa1f164c" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/169534242</div>`)[0];
+                popup_2decc905929f7db984153b43ca4690d0.setContent(html_a22c4931a32866accf8e6352fa1f164c);
+            
+        
+
+        marker_0fe61d802728190172b4af10b3f3e1c5.bindPopup(popup_2decc905929f7db984153b43ca4690d0)
+        ;
+
+        
+    
+    
+            marker_0fe61d802728190172b4af10b3f3e1c5.bindTooltip(
+                `<div>
+                     한밭대학교 창의혁신관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7697472e1d1967d10ebc71669e5cf80 = L.marker(
+                [36.3506566923668, 127.299655873647],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_3051fe7c4623bb0cd84f5e020123cc6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0670f7703d9f53352622e567fd623b6 = $(`<div id="html_a0670f7703d9f53352622e567fd623b6" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/268091096</div>`)[0];
+                popup_3051fe7c4623bb0cd84f5e020123cc6b.setContent(html_a0670f7703d9f53352622e567fd623b6);
+            
+        
+
+        marker_f7697472e1d1967d10ebc71669e5cf80.bindPopup(popup_3051fe7c4623bb0cd84f5e020123cc6b)
+        ;
+
+        
+    
+    
+            marker_f7697472e1d1967d10ebc71669e5cf80.bindTooltip(
+                `<div>
+                     한밭대학교 컨벤션홀
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_610675f27f3f6d0233273b92d4e0147a = L.marker(
+                [36.3548816960693, 127.302403845263],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_94f1defe6bad55875122bab57aabd5ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d8a75f615864648a27044a9908eb7b8 = $(`<div id="html_0d8a75f615864648a27044a9908eb7b8" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/26576822</div>`)[0];
+                popup_94f1defe6bad55875122bab57aabd5ca.setContent(html_0d8a75f615864648a27044a9908eb7b8);
+            
+        
+
+        marker_610675f27f3f6d0233273b92d4e0147a.bindPopup(popup_94f1defe6bad55875122bab57aabd5ca)
+        ;
+
+        
+    
+    
+            marker_610675f27f3f6d0233273b92d4e0147a.bindTooltip(
+                `<div>
+                     한밭대학교 그린에너지관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9964f1cc1fa685839db097e5c0e70d03 = L.marker(
+                [36.3465415023629, 127.304100494684],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_07242983902f7615839fc44e8109d002 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_860aa8695080736ca5b2e2baaf980157 = $(`<div id="html_860aa8695080736ca5b2e2baaf980157" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1556396261</div>`)[0];
+                popup_07242983902f7615839fc44e8109d002.setContent(html_860aa8695080736ca5b2e2baaf980157);
+            
+        
+
+        marker_9964f1cc1fa685839db097e5c0e70d03.bindPopup(popup_07242983902f7615839fc44e8109d002)
+        ;
+
+        
+    
+    
+            marker_9964f1cc1fa685839db097e5c0e70d03.bindTooltip(
+                `<div>
+                     국립한밭대학교 유성덕명캠퍼스 학생생활관 인재동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7801f8ce872f7ea15bc5a8b40b9411c3 = L.marker(
+                [36.3499433128293, 127.300949873067],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_02ef9467063acd2872062c53a55f4dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b1c8f05f8ff48afb45bab32e69164f5 = $(`<div id="html_4b1c8f05f8ff48afb45bab32e69164f5" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17556063</div>`)[0];
+                popup_02ef9467063acd2872062c53a55f4dd0.setContent(html_4b1c8f05f8ff48afb45bab32e69164f5);
+            
+        
+
+        marker_7801f8ce872f7ea15bc5a8b40b9411c3.bindPopup(popup_02ef9467063acd2872062c53a55f4dd0)
+        ;
+
+        
+    
+    
+            marker_7801f8ce872f7ea15bc5a8b40b9411c3.bindTooltip(
+                `<div>
+                     한밭대학교 유성덕명캠퍼스 인문사회관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3df980a2c20354f71f568da564cff00a = L.marker(
+                [36.34840559726628, 127.30249911311365],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_59555aab7773f87a6739da986cb1b0df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb7aa66aba1a61c76f3c2be0cb7ea874 = $(`<div id="html_cb7aa66aba1a61c76f3c2be0cb7ea874" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/2085626182</div>`)[0];
+                popup_59555aab7773f87a6739da986cb1b0df.setContent(html_cb7aa66aba1a61c76f3c2be0cb7ea874);
+            
+        
+
+        marker_3df980a2c20354f71f568da564cff00a.bindPopup(popup_59555aab7773f87a6739da986cb1b0df)
+        ;
+
+        
+    
+    
+            marker_3df980a2c20354f71f568da564cff00a.bindTooltip(
+                `<div>
+                     한밭대학교 디자인관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a69ebee17760439766c12f56ad58abf = L.marker(
+                [36.3504026800196, 127.298888441717],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_b42c5bef2867d0404f9c97f97a837567 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e7d9555e5440ce9412a48ad439b1b22 = $(`<div id="html_6e7d9555e5440ce9412a48ad439b1b22" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/309438665</div>`)[0];
+                popup_b42c5bef2867d0404f9c97f97a837567.setContent(html_6e7d9555e5440ce9412a48ad439b1b22);
+            
+        
+
+        marker_6a69ebee17760439766c12f56ad58abf.bindPopup(popup_b42c5bef2867d0404f9c97f97a837567)
+        ;
+
+        
+    
+    
+            marker_6a69ebee17760439766c12f56ad58abf.bindTooltip(
+                `<div>
+                     한밭대학교 국제교류관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fa63a882b5a540cbdc6ed943c039c25 = L.marker(
+                [36.346550555270305, 127.3114327685429],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_7560335f0a63d0c2f21501d06d206f8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c2a2305c8788d6d444c77fa0fda60c6 = $(`<div id="html_4c2a2305c8788d6d444c77fa0fda60c6" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1979829175</div>`)[0];
+                popup_7560335f0a63d0c2f21501d06d206f8e.setContent(html_4c2a2305c8788d6d444c77fa0fda60c6);
+            
+        
+
+        marker_1fa63a882b5a540cbdc6ed943c039c25.bindPopup(popup_7560335f0a63d0c2f21501d06d206f8e)
+        ;
+
+        
+    
+    
+            marker_1fa63a882b5a540cbdc6ed943c039c25.bindTooltip(
+                `<div>
+                     한밭대학교 지역협력관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_146270d1f9d480be2d1c24b9d07402d2 = L.marker(
+                [36.3463157559842, 127.303569362324],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_72d0f6503aa7e1da2584da329b860c98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8a466e05fbbdd8d1dd8c307a1585bef = $(`<div id="html_c8a466e05fbbdd8d1dd8c307a1585bef" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1556410030</div>`)[0];
+                popup_72d0f6503aa7e1da2584da329b860c98.setContent(html_c8a466e05fbbdd8d1dd8c307a1585bef);
+            
+        
+
+        marker_146270d1f9d480be2d1c24b9d07402d2.bindPopup(popup_72d0f6503aa7e1da2584da329b860c98)
+        ;
+
+        
+    
+    
+            marker_146270d1f9d480be2d1c24b9d07402d2.bindTooltip(
+                `<div>
+                     국립한밭대학교 유성덕명캠퍼스 학생생활관 미래동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6cd507626705edd3fdf6b166d9f5034 = L.marker(
+                [36.3508304216362, 127.300810689614],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_4a4d7703ad27a5f72c3eaab61316ba8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79e9792a2af522f7f45c9b5dcf66e635 = $(`<div id="html_79e9792a2af522f7f45c9b5dcf66e635" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/8147479</div>`)[0];
+                popup_4a4d7703ad27a5f72c3eaab61316ba8b.setContent(html_79e9792a2af522f7f45c9b5dcf66e635);
+            
+        
+
+        marker_a6cd507626705edd3fdf6b166d9f5034.bindPopup(popup_4a4d7703ad27a5f72c3eaab61316ba8b)
+        ;
+
+        
+    
+    
+            marker_a6cd507626705edd3fdf6b166d9f5034.bindTooltip(
+                `<div>
+                     한밭대학교 기숙사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcf7d525c3cc3a95a579d0097aebf098 = L.marker(
+                [36.3514139420232, 127.299551826559],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_2d8c78a7a21266ff4a423c3fb61aff64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52a28e8c8ba473f14d46152ff0e50af9 = $(`<div id="html_52a28e8c8ba473f14d46152ff0e50af9" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/12472972</div>`)[0];
+                popup_2d8c78a7a21266ff4a423c3fb61aff64.setContent(html_52a28e8c8ba473f14d46152ff0e50af9);
+            
+        
+
+        marker_dcf7d525c3cc3a95a579d0097aebf098.bindPopup(popup_2d8c78a7a21266ff4a423c3fb61aff64)
+        ;
+
+        
+    
+    
+            marker_dcf7d525c3cc3a95a579d0097aebf098.bindTooltip(
+                `<div>
+                     한밭대학교 대학본부
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d791a63fbe78a69e8cfc773a26e11f4 = L.marker(
+                [36.3515200715045, 127.297471179388],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_886f2b7cf1a05b0b4f622363099a01c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baa6729f448b4ecd3ff87e6d5d143abf = $(`<div id="html_baa6729f448b4ecd3ff87e6d5d143abf" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1020155461</div>`)[0];
+                popup_886f2b7cf1a05b0b4f622363099a01c0.setContent(html_baa6729f448b4ecd3ff87e6d5d143abf);
+            
+        
+
+        marker_4d791a63fbe78a69e8cfc773a26e11f4.bindPopup(popup_886f2b7cf1a05b0b4f622363099a01c0)
+        ;
+
+        
+    
+    
+            marker_4d791a63fbe78a69e8cfc773a26e11f4.bindTooltip(
+                `<div>
+                     한밭대학교어린이집
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9adb80740d987a30e33014b356a65367 = L.marker(
+                [36.3518400329835, 127.300694255321],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_4d23a53d7a10873f0e03611e134fe575 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce8865e83607f56c3c367249216c21ba = $(`<div id="html_ce8865e83607f56c3c367249216c21ba" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17558528</div>`)[0];
+                popup_4d23a53d7a10873f0e03611e134fe575.setContent(html_ce8865e83607f56c3c367249216c21ba);
+            
+        
+
+        marker_9adb80740d987a30e33014b356a65367.bindPopup(popup_4d23a53d7a10873f0e03611e134fe575)
+        ;
+
+        
+    
+    
+            marker_9adb80740d987a30e33014b356a65367.bindTooltip(
+                `<div>
+                     한밭대학교 산업정보관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f74c93eed07ec0665683906fcad2f1d = L.marker(
+                [36.3450799081405, 127.30546832733611],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_9d47f1bdfb64e5497f5ec92c975461d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f630ef6b7ff451b194c182331bd4d5e6 = $(`<div id="html_f630ef6b7ff451b194c182331bd4d5e6" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17564144</div>`)[0];
+                popup_9d47f1bdfb64e5497f5ec92c975461d1.setContent(html_f630ef6b7ff451b194c182331bd4d5e6);
+            
+        
+
+        marker_4f74c93eed07ec0665683906fcad2f1d.bindPopup(popup_9d47f1bdfb64e5497f5ec92c975461d1)
+        ;
+
+        
+    
+    
+            marker_4f74c93eed07ec0665683906fcad2f1d.bindTooltip(
+                `<div>
+                     한밭대학교 창조동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5711ebbaddf9f4d69485e0ea4df4175b = L.marker(
+                [36.3492288836074, 127.299792996968],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_d6456d2c29acd3d908585556c07c653e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7ee13a6f93609e389fceafe6ae56b6a = $(`<div id="html_d7ee13a6f93609e389fceafe6ae56b6a" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/8638149</div>`)[0];
+                popup_d6456d2c29acd3d908585556c07c653e.setContent(html_d7ee13a6f93609e389fceafe6ae56b6a);
+            
+        
+
+        marker_5711ebbaddf9f4d69485e0ea4df4175b.bindPopup(popup_d6456d2c29acd3d908585556c07c653e)
+        ;
+
+        
+    
+    
+            marker_5711ebbaddf9f4d69485e0ea4df4175b.bindTooltip(
+                `<div>
+                     한밭대학교 평생교육원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b7af6594f7998c14c084876d1d1aefc = L.marker(
+                [36.348689951446, 127.300521724107],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_6023cb53b6d6f852ed1be7fc4511063d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e14cef3b137521f865b6d3edf8995b9 = $(`<div id="html_3e14cef3b137521f865b6d3edf8995b9" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17564992</div>`)[0];
+                popup_6023cb53b6d6f852ed1be7fc4511063d.setContent(html_3e14cef3b137521f865b6d3edf8995b9);
+            
+        
+
+        marker_8b7af6594f7998c14c084876d1d1aefc.bindPopup(popup_6023cb53b6d6f852ed1be7fc4511063d)
+        ;
+
+        
+    
+    
+            marker_8b7af6594f7998c14c084876d1d1aefc.bindTooltip(
+                `<div>
+                     국립한밭대학교 유성덕명캠퍼스 산학연협동관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a4650d7686d319a2d8a3b1e59ecedaf = L.marker(
+                [36.3505837603402, 127.299989806484],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_e6f843de29563201fcc8cc4f0db6ba26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7c8c3cf9f31ab6a27ea86abf657fe2c = $(`<div id="html_a7c8c3cf9f31ab6a27ea86abf657fe2c" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17556062</div>`)[0];
+                popup_e6f843de29563201fcc8cc4f0db6ba26.setContent(html_a7c8c3cf9f31ab6a27ea86abf657fe2c);
+            
+        
+
+        marker_5a4650d7686d319a2d8a3b1e59ecedaf.bindPopup(popup_e6f843de29563201fcc8cc4f0db6ba26)
+        ;
+
+        
+    
+    
+            marker_5a4650d7686d319a2d8a3b1e59ecedaf.bindTooltip(
+                `<div>
+                     한밭대학교 학생회관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eabb7b2b7fba190223dd187f27269052 = L.marker(
+                [36.3513887084014, 127.300986629569],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_899c4cb9f4e4b4c66ed6b7ecb9097281 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38e12743587c2ad8c4cf7b72e3ebd212 = $(`<div id="html_38e12743587c2ad8c4cf7b72e3ebd212" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/27550132</div>`)[0];
+                popup_899c4cb9f4e4b4c66ed6b7ecb9097281.setContent(html_38e12743587c2ad8c4cf7b72e3ebd212);
+            
+        
+
+        marker_eabb7b2b7fba190223dd187f27269052.bindPopup(popup_899c4cb9f4e4b4c66ed6b7ecb9097281)
+        ;
+
+        
+    
+    
+            marker_eabb7b2b7fba190223dd187f27269052.bindTooltip(
+                `<div>
+                     한밭대학교 전기전자관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16e5b0f9e321e6228b292f66565ef661 = L.marker(
+                [36.3523671675673, 127.301788067654],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_8d39f0578cd08410bc1e7ce8e64e6078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5272204a9fc98f5193a2fc6a665dd306 = $(`<div id="html_5272204a9fc98f5193a2fc6a665dd306" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/27203062</div>`)[0];
+                popup_8d39f0578cd08410bc1e7ce8e64e6078.setContent(html_5272204a9fc98f5193a2fc6a665dd306);
+            
+        
+
+        marker_16e5b0f9e321e6228b292f66565ef661.bindPopup(popup_8d39f0578cd08410bc1e7ce8e64e6078)
+        ;
+
+        
+    
+    
+            marker_16e5b0f9e321e6228b292f66565ef661.bindTooltip(
+                `<div>
+                     한밭대학교 기계관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ff446a57481b7413d969aa350c116e1 = L.marker(
+                [36.3460673428518, 127.304862838906],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_8370ae84b518fc85b3e9f5cea6e2cbbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3832be7f8ad442ad70d969498caa726a = $(`<div id="html_3832be7f8ad442ad70d969498caa726a" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1556788818</div>`)[0];
+                popup_8370ae84b518fc85b3e9f5cea6e2cbbc.setContent(html_3832be7f8ad442ad70d969498caa726a);
+            
+        
+
+        marker_4ff446a57481b7413d969aa350c116e1.bindPopup(popup_8370ae84b518fc85b3e9f5cea6e2cbbc)
+        ;
+
+        
+    
+    
+            marker_4ff446a57481b7413d969aa350c116e1.bindTooltip(
+                `<div>
+                     한밭대학교 유성덕명캠퍼스 학생생활관 목련화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a40acd5bbd727a01525b53ad6bbe48ed = L.marker(
+                [36.3507981029559, 127.300761547343],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_f2e2bdd6c0916bd36441ad2b8f67034d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_535c8db0956d19a046bf4d109162006c = $(`<div id="html_535c8db0956d19a046bf4d109162006c" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/26557762</div>`)[0];
+                popup_f2e2bdd6c0916bd36441ad2b8f67034d.setContent(html_535c8db0956d19a046bf4d109162006c);
+            
+        
+
+        marker_a40acd5bbd727a01525b53ad6bbe48ed.bindPopup(popup_f2e2bdd6c0916bd36441ad2b8f67034d)
+        ;
+
+        
+    
+    
+            marker_a40acd5bbd727a01525b53ad6bbe48ed.bindTooltip(
+                `<div>
+                     한밭대학교 일반대학원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_305dbc1bb2d02e570ca6f1826393e319 = L.marker(
+                [36.3510735396344, 127.298013136115],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_51a73937bc919c1cf8298b85cc87eb86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6170bc2831cb0f7a91972a75ebfeb8ff = $(`<div id="html_6170bc2831cb0f7a91972a75ebfeb8ff" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1871927000</div>`)[0];
+                popup_51a73937bc919c1cf8298b85cc87eb86.setContent(html_6170bc2831cb0f7a91972a75ebfeb8ff);
+            
+        
+
+        marker_305dbc1bb2d02e570ca6f1826393e319.bindPopup(popup_51a73937bc919c1cf8298b85cc87eb86)
+        ;
+
+        
+    
+    
+            marker_305dbc1bb2d02e570ca6f1826393e319.bindTooltip(
+                `<div>
+                     KB국민은행 한밭대학교 ATM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b42ddf469fee6702198867fc4fa82039 = L.marker(
+                [36.3543832475635, 127.301372493379],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_102ca3d17107da00ab0a10df68d74f1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_425baefb66b5e27e26009aa835cf64a1 = $(`<div id="html_425baefb66b5e27e26009aa835cf64a1" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17561294</div>`)[0];
+                popup_102ca3d17107da00ab0a10df68d74f1c.setContent(html_425baefb66b5e27e26009aa835cf64a1);
+            
+        
+
+        marker_b42ddf469fee6702198867fc4fa82039.bindPopup(popup_102ca3d17107da00ab0a10df68d74f1c)
+        ;
+
+        
+    
+    
+            marker_b42ddf469fee6702198867fc4fa82039.bindTooltip(
+                `<div>
+                     한밭대학교 학생동아리관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adcf2e5a11c7ddd34725d96f832d5081 = L.marker(
+                [36.3473872991879, 127.302486262216],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_e04d532f3772a4fda89c710e39cf3af0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ed1f86bb5917230be452ab47eddacec = $(`<div id="html_3ed1f86bb5917230be452ab47eddacec" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17565998</div>`)[0];
+                popup_e04d532f3772a4fda89c710e39cf3af0.setContent(html_3ed1f86bb5917230be452ab47eddacec);
+            
+        
+
+        marker_adcf2e5a11c7ddd34725d96f832d5081.bindPopup(popup_e04d532f3772a4fda89c710e39cf3af0)
+        ;
+
+        
+    
+    
+            marker_adcf2e5a11c7ddd34725d96f832d5081.bindTooltip(
+                `<div>
+                     한밭대학교 운동장
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8480fdfbffe8d1ef1038036bab7b3c1e = L.marker(
+                [36.3527091498572, 127.301972095316],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_09c84bfefbf73dc3bcd8578553f078fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61430b8dbdb6289b1e28f17b381bb3b1 = $(`<div id="html_61430b8dbdb6289b1e28f17b381bb3b1" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/27203061</div>`)[0];
+                popup_09c84bfefbf73dc3bcd8578553f078fc.setContent(html_61430b8dbdb6289b1e28f17b381bb3b1);
+            
+        
+
+        marker_8480fdfbffe8d1ef1038036bab7b3c1e.bindPopup(popup_09c84bfefbf73dc3bcd8578553f078fc)
+        ;
+
+        
+    
+    
+            marker_8480fdfbffe8d1ef1038036bab7b3c1e.bindTooltip(
+                `<div>
+                     한밭대학교 공동실습관2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b640427d82f61d519970fac2c680482f = L.marker(
+                [36.3523835644499, 127.301003827994],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_7b4c8aa1bdfc532af3f09273de964934 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47a7a78d3f6759a181a98c107e1f1994 = $(`<div id="html_47a7a78d3f6759a181a98c107e1f1994" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/27203065</div>`)[0];
+                popup_7b4c8aa1bdfc532af3f09273de964934.setContent(html_47a7a78d3f6759a181a98c107e1f1994);
+            
+        
+
+        marker_b640427d82f61d519970fac2c680482f.bindPopup(popup_7b4c8aa1bdfc532af3f09273de964934)
+        ;
+
+        
+    
+    
+            marker_b640427d82f61d519970fac2c680482f.bindTooltip(
+                `<div>
+                     한밭대학교 화학환경관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fc21e3b7c81712f6337709bb62fc1dc = L.marker(
+                [36.350826895481, 127.300779482803],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_3f29f6e3608aec755f4a8e00fa412e2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cff670e220ae1f47206cd8fff4af28c = $(`<div id="html_2cff670e220ae1f47206cd8fff4af28c" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/27583945</div>`)[0];
+                popup_3f29f6e3608aec755f4a8e00fa412e2d.setContent(html_2cff670e220ae1f47206cd8fff4af28c);
+            
+        
+
+        marker_3fc21e3b7c81712f6337709bb62fc1dc.bindPopup(popup_3f29f6e3608aec755f4a8e00fa412e2d)
+        ;
+
+        
+    
+    
+            marker_3fc21e3b7c81712f6337709bb62fc1dc.bindTooltip(
+                `<div>
+                     한밭대학교 중등교육연수원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7c630aace4447dc94a0aa3c46ab509d = L.marker(
+                [36.3463996325993, 127.30354295235],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_4a021d105976df4bd4a66d0e3a62c9e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6757cb119d61eb09dd8f2b89a2f3dad = $(`<div id="html_a6757cb119d61eb09dd8f2b89a2f3dad" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/1261160817</div>`)[0];
+                popup_4a021d105976df4bd4a66d0e3a62c9e2.setContent(html_a6757cb119d61eb09dd8f2b89a2f3dad);
+            
+        
+
+        marker_c7c630aace4447dc94a0aa3c46ab509d.bindPopup(popup_4a021d105976df4bd4a66d0e3a62c9e2)
+        ;
+
+        
+    
+    
+            marker_c7c630aace4447dc94a0aa3c46ab509d.bindTooltip(
+                `<div>
+                     한밭대학교 유성덕명캠퍼스 미래동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3179366f720026dc80046ac0a4c406fb = L.marker(
+                [36.3456636177783, 127.305567522652],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_c8ae8327610de024f686856132cbc680 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b7d0d813675dc89002d13097cebe828 = $(`<div id="html_8b7d0d813675dc89002d13097cebe828" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17568064</div>`)[0];
+                popup_c8ae8327610de024f686856132cbc680.setContent(html_8b7d0d813675dc89002d13097cebe828);
+            
+        
+
+        marker_3179366f720026dc80046ac0a4c406fb.bindPopup(popup_c8ae8327610de024f686856132cbc680)
+        ;
+
+        
+    
+    
+            marker_3179366f720026dc80046ac0a4c406fb.bindTooltip(
+                `<div>
+                     한밭대학교 인화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efe8ea66053b9fa089725ff496512027 = L.marker(
+                [36.3518304539068, 127.301634484121],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_5a342bf5c83f46c4869c307264838ac8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6af1ef9ff0c0d60887817c67d33e04f = $(`<div id="html_c6af1ef9ff0c0d60887817c67d33e04f" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17567405</div>`)[0];
+                popup_5a342bf5c83f46c4869c307264838ac8.setContent(html_c6af1ef9ff0c0d60887817c67d33e04f);
+            
+        
+
+        marker_efe8ea66053b9fa089725ff496512027.bindPopup(popup_5a342bf5c83f46c4869c307264838ac8)
+        ;
+
+        
+    
+    
+            marker_efe8ea66053b9fa089725ff496512027.bindTooltip(
+                `<div>
+                     한밭대학교 자동화관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74c406663cdb7ef31a63f77bbe672e2c = L.marker(
+                [36.35030160143813, 127.29894709932587],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_09259b2175592478157867e032052f74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03eda142644800ddab7ce42c03453feb = $(`<div id="html_03eda142644800ddab7ce42c03453feb" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17562206</div>`)[0];
+                popup_09259b2175592478157867e032052f74.setContent(html_03eda142644800ddab7ce42c03453feb);
+            
+        
+
+        marker_74c406663cdb7ef31a63f77bbe672e2c.bindPopup(popup_09259b2175592478157867e032052f74)
+        ;
+
+        
+    
+    
+            marker_74c406663cdb7ef31a63f77bbe672e2c.bindTooltip(
+                `<div>
+                     국립한밭대학교 유성덕명캠퍼스 국제교류원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61ce4317a33ac4dfd14dc4dba82d9929 = L.marker(
+                [36.34647679011024, 127.3113823455941],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_12772e1ea3cfe931ff8e51214f9a4e01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_321383f532b4e15d7734890be31fb326 = $(`<div id="html_321383f532b4e15d7734890be31fb326" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17565875</div>`)[0];
+                popup_12772e1ea3cfe931ff8e51214f9a4e01.setContent(html_321383f532b4e15d7734890be31fb326);
+            
+        
+
+        marker_61ce4317a33ac4dfd14dc4dba82d9929.bindPopup(popup_12772e1ea3cfe931ff8e51214f9a4e01)
+        ;
+
+        
+    
+    
+            marker_61ce4317a33ac4dfd14dc4dba82d9929.bindTooltip(
+                `<div>
+                     한밭대학교 공동실험실습관
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84c03b9bce6f8ff93dffea5f1b57c927 = L.marker(
+                [36.3500591205449, 127.299332741976],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_3c0aee3a406b9e37ef97a0a099baa014 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_642c962c1d973bf96d7861996fba51c0 = $(`<div id="html_642c962c1d973bf96d7861996fba51c0" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17574396</div>`)[0];
+                popup_3c0aee3a406b9e37ef97a0a099baa014.setContent(html_642c962c1d973bf96d7861996fba51c0);
+            
+        
+
+        marker_84c03b9bce6f8ff93dffea5f1b57c927.bindPopup(popup_3c0aee3a406b9e37ef97a0a099baa014)
+        ;
+
+        
+    
+    
+            marker_84c03b9bce6f8ff93dffea5f1b57c927.bindTooltip(
+                `<div>
+                     한밭대학교 주차장3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb05b50f9c457c7c31eb816e9faf4afd = L.marker(
+                [36.3468310278858, 127.302938617536],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_5eeae151df45acc3043898c7adbba94b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2f2ac7b136e4eec0223869b7892431d = $(`<div id="html_f2f2ac7b136e4eec0223869b7892431d" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17568070</div>`)[0];
+                popup_5eeae151df45acc3043898c7adbba94b.setContent(html_f2f2ac7b136e4eec0223869b7892431d);
+            
+        
+
+        marker_fb05b50f9c457c7c31eb816e9faf4afd.bindPopup(popup_5eeae151df45acc3043898c7adbba94b)
+        ;
+
+        
+    
+    
+            marker_fb05b50f9c457c7c31eb816e9faf4afd.bindTooltip(
+                `<div>
+                     한밭대학교 한밭인큐베이터타운
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1673545ad9d887c444a0287f4e310ed4 = L.marker(
+                [36.3534730586979, 127.3020864539],
+                {}
+            ).addTo(map_ac8a7fc43d1c346f4cef95ca4f483b1b);
+        
+    
+        var popup_0208c32023572caae009aee3e876d4e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20a896193ff6f26337ba4472452225f7 = $(`<div id="html_20a896193ff6f26337ba4472452225f7" style="width: 100.0%; height: 100.0%;">http://place.map.kakao.com/17568972</div>`)[0];
+                popup_0208c32023572caae009aee3e876d4e0.setContent(html_20a896193ff6f26337ba4472452225f7);
+            
+        
+
+        marker_1673545ad9d887c444a0287f4e310ed4.bindPopup(popup_0208c32023572caae009aee3e876d4e0)
+        ;
+
+        
+    
+    
+            marker_1673545ad9d887c444a0287f4e310ed4.bindTooltip(
+                `<div>
+                     한밭대학교 주차장6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
